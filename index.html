@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TACO TRUMP — $MAVERICK</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: 'Segoe UI', sans-serif; }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 3px 3px 20px rgba(0,0,0,0.8);
+    letter-spacing: 4px;
+  }
+  .hero-sub {
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem 0 2rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+  }
+  .hero-tagline {
+    font-size: 1.2rem;
+    color: #FFD700;
+    max-width: 700px;
+    line-height: 1.8;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+  }
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary { background: #FFD700; color: #000; }
+  .btn-primary:hover { transform: translateY(-3px); opacity: 0.9; }
+  .btn-secondary { background: transparent; color: #FFD700; border: 2px solid #FFD700; }
+  .btn-secondary:hover { background: #FFD700; color: #000; }
+
+  .story {
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .story h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #FFD700;
+    margin-bottom: 2rem;
+  }
+  .story p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  .story .highlight { color: #FFD700; font-weight: 700; }
+
+  .second-img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    opacity: 0.9;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    background: #111;
+    flex-wrap: wrap;
+  }
+  .stat { text-align: center; }
+  .stat-num { font-size: 2.5rem; font-weight: 800; color: #FFD700; }
+  .stat-label { font-size: 0.9rem; color: #888; margin-top: 0.3rem; }
+
+  .buy {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #0d0d0d;
+  }
+  .buy h2 { font-size: 2.5rem; font-weight: 800; color: #FFD700; margin-bottom: 1rem; }
+  .buy p { color: #888; margin-bottom: 2rem; font-size: 1.1rem; }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+  .nav-logo { font-size: 1.5rem; font-weight: 900; color: #FFD700; }
+  .nav-links a { color: #fff; text-decoration: none; margin-left: 1.5rem; transition: color 0.2s; }
+  .nav-links a:hover { color: #FFD700; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #222;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  footer a { color: #FFD700; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">🌮 TACO TRUMP</div>
+  <div class="nav-links">
+    <a href="#story">Story</a>
+    <a href="#buy">Buy</a>
+    <a href="https://x.com/MeltCoinBSC" target="_blank">Twitter</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <img src="카카오톡_20260503_203212804.png" alt="Taco Trump Maverick">
+  <div class="hero-overlay">
+    <div class="hero-title">🌮 TACO TRUMP</div>
+    <div class="hero-sub">$MAVERICK — The Meme Coin That Flies</div>
+    <div class="hero-tagline">
+      "When the world is on fire, one man grabs his helmet,<br>
+      jumps in his F/A-18, and packs TACOS instead of missiles."
+    </div>
+    <div class="btn-group">
+      <a href="#buy" class="btn btn-primary">🚀 Buy $MAVERICK</a>
+      <a href="#story" class="btn btn-secondary">Read Story</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">🌮</div><div class="stat-label">Taco Powered</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Community</div></div>
+  <div class="stat"><div class="stat-num">0%</div><div class="stat-label">Team Tokens</div></div>
+  <div class="stat"><div class="stat-num">SOL</div><div class="stat-label">Solana Chain</div></div>
+</div>
+
+<section class="story" id="story">
+  <h2>🌮 The Story of Maverick</h2>
+  <p>
+    <span class="highlight">February 28, 2026.</span><br>
+    The missiles flew. The Strait of Hormuz closed. Gas prices up 50%.
+    The world changed forever.
+  </p>
+  <p>
+    While generals planned and politicians argued,<br>
+    one man grabbed his helmet and jumped in his F/A-18.
+  </p>
+  <p>
+    He didn't carry missiles.<br>
+    <span class="highlight">He carried TACOS. 🌮</span>
+  </p>
+  <p>
+    Because when the world is burning —<br>
+    you don't need more weapons.<br>
+    <span class="highlight">You need TACOS.</span>
+  </p>
+  <p style="font-size:1.4rem; color:#FFD700; font-weight:700; margin-top:2rem;">
+    Feel the need... the need for TACO. 🌮🚀
+  </p>
+</section>
+
+<img src="카카오톡_20260504_202010719.png" alt="Taco Trump on Carrier" class="second-img">
+
+<section class="buy" id="buy">
+  <h2>🚀 Buy $MAVERICK</h2>
+  <p>Available on Pump.fun — Solana Chain</p>
+  <div class="btn-group">
+    <a href="#" class="btn btn-primary">Buy on Pump.fun</a>
+    <a href="https://x.com/MeltCoinBSC" target="_blank" class="btn btn-secondary">Follow on X</a>
+  </div>
+</section>
+
+<footer>
+  <p>$MAVERICK is a meme coin for entertainment purposes only. Always DYOR.</p>
+  <p style="margin-top:0.5rem;">
+    <a href="https://x.com/MeltCoinBSC">Twitter</a>
+  </p>
+</footer>
+
+</body>
+</html>
